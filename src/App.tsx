@@ -15,7 +15,7 @@ function App() {
 			() => {
 				alert('Custom protocol found and opened the file successfully.')
 			},
-			5000
+			200
 		)
 	}
 
