@@ -78,7 +78,7 @@ function App() {
 	return (
 		<>
 			<a
-				href={`intent://reclaim${testUri}#Intent;scheme=reclaim;package=com.credentialswallet;end`}
+				href={`intent://reclaim#Intent;scheme=reclaim${testUri};package=com.credentialswallet;end`}
 			>
 				intent
 			</a>
