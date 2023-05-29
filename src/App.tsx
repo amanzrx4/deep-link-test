@@ -74,7 +74,7 @@ function App() {
 
 	return (
 		<>
-			<a href="intent://reclaim/#Intent;scheme=template;package=com.google.zxing.client.android;end">
+			<a href="intent://reclaim/#Intent;scheme=reclaim;package=com.credentialswallet;end">
 				intent
 			</a>
 
