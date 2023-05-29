@@ -29,6 +29,8 @@ import './App.css'
 
 function App() {
 	const handleOpenDeepLink = () => {
+		window.open(intent, '_self', 'noopener,noreferrer')
+
 		// openReclaimApp()
 		// const handleAppAvailabilityCheck = (isAvailable: boolean) => {
 		// 	if (isAvailable) {
@@ -75,13 +77,11 @@ function App() {
 	const testUri =
 		'template/%7B%22id%22%3A%22acb0a585-016b-4726-8dc9-f04d127d4785%22%2C%22name%22%3A%22Github%22%2C%22callbackUrl%22%3A%22https%3A%2F%2Fswags-for-devs-tdan.onrender.com%2Fcallback%2Frepo-1cf734e4-a147-4217-a9f8-557ab4b8961a%22%2C%22claims%22%3A%5B%7B%22provider%22%3A%22github-commits%22%2C%22payload%22%3A%7B%22repository%22%3A%22questbook%2Fswag-for-devs%22%2C%22type%22%3A%22github-commits%22%2C%22searchQuery%22%3A%7B%22keywords%22%3A%5B%5D%2C%22qualifiers%22%3A%7B%7D%7D%7D%2C%22templateClaimId%22%3A%227e31c2b2-4da8-4e53-b828-830c3240f54a%22%7D%5D%7D'
 
+	const intent = `intent://${testUri}#Intent;scheme=reclaim;package=com.credentialswallet;end`
+
 	return (
 		<>
-			<a
-				href={`intent://${testUri}#Intent;scheme=reclaim;package=com.credentialswallet;end`}
-			>
-				intent
-			</a>
+			<a href={intent}>intent</a>
 
 			<button onClick={handleOpenDeepLink}>open deep link</button>
 		</>
