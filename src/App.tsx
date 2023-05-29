@@ -2,15 +2,24 @@ import './App.css'
 
 const APP_URI = 'https://www.google.com'
 
+// ‘intent://path#Intent;scheme=URI Scheme;package=package name;S.browser_fallback_url=fallback url‘
+
 function openReclaimApp() {
 	const uri = 'reclaim://'
 	const packageName = 'com.credentialswallet'
+
+	const intent = `intent://${uri}#Intent;scheme=${uri};package=${packageName};S.browser_fallback_url=${uri};end`
+
+	window.location =
+		'intent://@Intent;scheme=reclaim://;package=com.credentialswallet;S.browser_fallback_url=http://google.com'
+
+	return
 
 	const fallbackMarketUri = `market://details?id=${packageName}`
 	const fallbackWebUri = `https://play.google.com/store/apps/details?id=${packageName}`
 
 	if (navigator.userAgent.match(/Chrome/i)) {
-		window.location.href = uri
+		window.location = intent
 	} else if (navigator.userAgent.match(/Android/i)) {
 		window.location.href = fallbackMarketUri
 	} else {
