@@ -8,7 +8,7 @@ function openReclaimApp() {
 	const uri = 'reclaim://'
 	const packageName = 'com.credentialswallet'
 
-	const intent = `intent://${uri}#Intent;scheme=${uri};package=${packageName};S.browser_fallback_url=${uri};end`
+	const intent = `intent://${uri}@Intent;scheme=${uri};package=${packageName};S.browser_fallback_url=${uri};end`
 
 	window.location =
 		'intent://@Intent;scheme=reclaim://;package=com.credentialswallet;S.browser_fallback_url=http://google.com'
