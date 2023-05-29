@@ -83,6 +83,9 @@ function App() {
 
 	return (
 		<>
+			<a href="intent://reclaim/#Intent;scheme=template;package=com.credentialswallet;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end">
+				intent
+			</a>
 			<button onClick={handleOpenDeepLink}>open deep link</button>
 		</>
 	)
