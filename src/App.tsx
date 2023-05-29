@@ -29,8 +29,7 @@ const APP_URI = 'https://www.google.com'
 
 function App() {
 	const handleOpenDeepLink = () => {
-		openReclaimApp()
-
+		// openReclaimApp()
 		// const handleAppAvailabilityCheck = (isAvailable: boolean) => {
 		// 	if (isAvailable) {
 		// 		alert('App exists')
@@ -40,34 +39,26 @@ function App() {
 		// 		// Perform actions when the app does not exist
 		// 	}
 		// }
-
 		// function checkCustomAppAvailability(protocol: string): void {
 		// 	const iframe = document.createElement('iframe')
 		// 	iframe.style.display = 'none'
-
 		// 	const handleAppAvailability = (isAvailable: boolean) => {
 		// 		document.body.removeChild(iframe)
 		// 		handleAppAvailabilityCheck(isAvailable)
 		// 	}
-
 		// 	iframe.onload = () => {
 		// 		console.log('loading')
 		// 		handleAppAvailability(true) // Protocol was successfully opened (app exists)
 		// 	}
-
 		// 	iframe.onerror = () => {
 		// 		handleAppAvailability(false) // Error occurred (app does not exist)
 		// 	}
-
 		// 	document.body.appendChild(iframe)
 		// 	iframe.src = protocol
 		// }
-
 		// // Usage example
 		// checkCustomAppAvailability(APP_URI)
-
 		// // Callback function to handle the result
-
 		// // window.location.href = 'reclaim://template'
 		// // customProtocolCheck(
 		// // 	APP_URI,
