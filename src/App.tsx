@@ -3,7 +3,7 @@ import './App.css'
 const APP_URI = 'https://www.google.com'
 
 function openReclaimApp() {
-	const uri = 'reclaim://template'
+	const uri = 'reclaim://'
 	const packageName = 'com.credentialswallet'
 
 	const fallbackMarketUri = `market://details?id=${packageName}`
