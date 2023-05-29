@@ -21,7 +21,7 @@ function App() {
 
 	return (
 		<>
-			<div onClick={handleOpenDeepLink}>open deep link</div>
+			<button onClick={handleOpenDeepLink}>open deep link</button>
 		</>
 	)
 }
