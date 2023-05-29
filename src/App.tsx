@@ -1,6 +1,6 @@
 import './App.css'
 
-const APP_URI = 'https://www.google.com'
+// const APP_URI = 'https://www.google.com'
 
 // ‘intent://path#Intent;scheme=URI Scheme;package=package name;S.browser_fallback_url=fallback url‘
 
